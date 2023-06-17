@@ -1,9 +1,12 @@
 import React from 'react'
 import './style.css'
+import Navbar from '../Components/Navbar'
 
 const Root = () => {
     return (
-        <div>Root</div>
+        <div>
+            <Navbar />
+        </div>
     )
 }
 export default Root
