@@ -16,13 +16,11 @@ const NavbarStyle = styled.div`
     justify-content: space-between;
     padding: 0 10px;
     margin: 0 auto;
-    
     .burger:hover{
         background-color: var(--third-color-opacity);
     }
-    
 `
-const Burger = styled.img`
+const Burger = styled.i`
     width: fit-content;
     background-color: var(--third-text-color);
     padding: 10px 10px;
@@ -31,7 +29,6 @@ const Burger = styled.img`
     align-items: center;
     cursor: pointer;
     color: white;
-
 `
 
 const Left = styled.div`
