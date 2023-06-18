@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #E2E2E2;
+}
+
 :root {
     /* BACKGROUND-COLORS */
     --back-main: #e2e2e2;
@@ -23,4 +27,21 @@
 .center {
     width: 1440px;
     margin: 0 auto;
+}
+
+
+
+.main {
+    min-height: 100vh;
+    padding-top: 80px;
+    border: 1px solid red;
+}
+
+@media (max-width: 520px) {
+    .main {
+        width: 425px;
+        padding-top: 160px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
