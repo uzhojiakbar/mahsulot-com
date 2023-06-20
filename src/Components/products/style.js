@@ -1,5 +1,8 @@
 import { styled } from "styled-components";
 
+const media = {
+  mobile: "@media (max-width: 520px)",
+}
 export const ProductsMain = styled.div`
   width: 1440px;
   height: 100%;
@@ -20,6 +23,9 @@ export const ProductsHeader = styled.div`
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+ }
+ ${media.mobile}{
+  background-color: red;
  }
 `
 export const Name = styled.div`
