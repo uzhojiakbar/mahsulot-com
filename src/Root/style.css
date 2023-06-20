@@ -29,17 +29,17 @@ body {
     margin: 0 auto;
 }
 
-
-
 .main {
     min-height: 100vh;
     padding-top: 80px;
-    border: 1px solid red;
 }
 
 @media (max-width: 520px) {
+    .center{
+        width: 100%;
+    }
     .main {
-        width: 425px;
+        width: 100%;
         padding-top: 160px;
         padding-right: 10px;
         padding-left: 10px;

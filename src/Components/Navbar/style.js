@@ -15,9 +15,9 @@ const NavbarWindow = styled.div`
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: white;
+    background-color: #F5F5F5;
     ${media.mobile} {
-        width: 430px;
+        width: 100%;
         height: 160px;
     }
 `
@@ -35,6 +35,7 @@ const NavbarStyle = styled.div`
     .burger:hover{
         background-color: var(--third-color-opacity);
     }
+    background-color: #F5F5F5;
 
     /* MEDIA LAPTOP */
     ${media.tablet} {
@@ -42,10 +43,14 @@ const NavbarStyle = styled.div`
     }
     /* MEDIA MOBILE*/
     ${media.mobile} {
-        width: 430px;
+        /* width: 430px; */
+        width: 100%;
         height: 160px;
+        background-color: #E2E2E2;
+        .burger:hover{
+            background-color: white;
+        }
     }
-    background-color: #fff;
     /* position: fixed; */
     top: 0;
 `
@@ -80,7 +85,6 @@ const Left = styled.div`
         display: flex;
         align-items: center;
     }
-    
     /* MEDIA MOBILE*/
     ${media.mobile} {
         display: flex;
@@ -131,8 +135,13 @@ const SearchStyle = styled.div`
         margin: 0 auto;
         margin-top: -10px;
         > input{
-            padding: 12px 10px;
+            /* padding: 12px 10px; */
+            padding: 10px 10px;
+            padding-left: 45px;
         }
+        > img{
+        left: 10px;
+    }
     }
 `
 const Right = styled.div`
@@ -153,7 +162,6 @@ const Right = styled.div`
     .active{
         box-shadow:  0 5px 5px var(--main-color);
     }
-
     /* MEDIA MOBILE */
     ${media.mobile} {
         gap: 10px;
