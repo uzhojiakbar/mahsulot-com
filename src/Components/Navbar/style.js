@@ -17,7 +17,7 @@ const NavbarWindow = styled.div`
     height: 80px;
     background-color: white;
     ${media.mobile} {
-        width: 430px;
+        width: 100%;
         height: 160px;
     }
 `
@@ -42,8 +42,12 @@ const NavbarStyle = styled.div`
     }
     /* MEDIA MOBILE*/
     ${media.mobile} {
-        width: 430px;
+        /* width: 430px; */
+        width: 100%;
         height: 160px;
+        .burger:hover{
+            background-color: white;
+        }
     }
     background-color: #fff;
     /* position: fixed; */
@@ -80,7 +84,6 @@ const Left = styled.div`
         display: flex;
         align-items: center;
     }
-    
     /* MEDIA MOBILE*/
     ${media.mobile} {
         display: flex;
@@ -153,7 +156,6 @@ const Right = styled.div`
     .active{
         box-shadow:  0 5px 5px var(--main-color);
     }
-
     /* MEDIA MOBILE */
     ${media.mobile} {
         gap: 10px;
