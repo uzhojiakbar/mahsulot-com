@@ -1,22 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 // STYLE
 import { Burger, Right, NavbarStyle, SearchStyle, Left, Button, NavbarWindow } from './style.js'
 // LOGO
 import Logo from '../../Assets/logo/logo.svg'
 // ICONS
-// import BurgerLogo from '../../Assets/icon/burger.svg'
 import SearchLogo from '../../Assets/icon/search.svg'
 import ProfileLogo from '../../Assets/icon/profile.svg'
 import BuyLogo from '../../Assets/icon/buy.svg'
 import { NavLink } from 'react-router-dom'
+import { MainContext } from '../../Context/main/index.js'
 
 const Navbar = () => {
+    const [MuchContext,setMuchContext] = useContext(MainContext)
     return (
         <NavbarWindow>
             <NavbarStyle>
                 <Left>
-                    <Burger className='fa-solid fa-bars burger' ></Burger>
+                    <Burger onClick={()=>setMuchContext({...MainContext, sidebar: !MuchContext.sidebar})} className='fa-solid fa-bars burger' ></Burger>
                     <NavLink className={'navigation'} to={'/'}><img src={Logo} alt="" className="logo" /></NavLink>
                 </Left>
                 <SearchStyle>
