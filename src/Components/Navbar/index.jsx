@@ -11,7 +11,7 @@ import BuyLogo from '../../Assets/icon/buy.svg'
 import { NavLink } from 'react-router-dom'
 import { MainContext } from '../../Context/main/index.js'
 
-const Navbar = () => {
+const Navbar = ({setFilterText}) => {
     const [MuchContext,setMuchContext] = useContext(MainContext)
     return (
         <NavbarWindow>
@@ -21,9 +21,8 @@ const Navbar = () => {
                     <NavLink className={'navigation'} to={'/'}><img src={Logo} alt="" className="logo" /></NavLink>
                 </Left>
                 <SearchStyle>
-                    <input placeholder='Search' type="text" />
+                    <input onChange={(e)=>setFilterText(e.target.value)} placeholder='Search' type="text" />
                     <img src={SearchLogo} alt="" />
-
                 </SearchStyle>
                 <Right>
                     <NavLink className={({ isActive }) => isActive ? 'active navlink' : 'navlink'} to={'/profile'}>

@@ -8,7 +8,7 @@ const Main = ({ children }) => {
     const [MuchContext,setMuchContext] = useState(
         {
             sidebar: false,
-            filter: ''
+            filter: '',
         }
     )
     return (

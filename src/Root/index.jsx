@@ -9,11 +9,12 @@ import Products from '../Components/products'
 
 const Root = () => {
     const [active, setActive] = useState('')
+    const [filtertext,setFilterText] = useState('')
     const [MuchContext] = useContext(MainContext)
 
     return (
         <div className='main center' >
-            <Navbar />
+            <Navbar setFilterText={setFilterText} />
             {
                 MuchContext.sidebar ? <Sidebar
                     active={active}
@@ -23,7 +24,10 @@ const Root = () => {
             <Routes>
                 <Route path='/profile' element={<h1>Profile</h1>} />
                 <Route path='/buy' element={<h1>Shop</h1>} />
-                <Route path='/' element={<Products filter={active} />}/>
+                <Route path='/' element={<Products
+                    filtertext={filtertext}
+                    setFilterText={setFilterText}
+                    filter={active} />}/>
             </Routes>
         </div>
     )

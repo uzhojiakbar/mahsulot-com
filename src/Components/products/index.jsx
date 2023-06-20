@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { products } from '../../Mock/products'
 import { Name, Info, ProductsHeader, ProductsMain, StartsQoldiq, ProductPrice } from './style'
+import { MainContext } from '../../Context/main'
 
-const Products = ({ filter }) => {
+const Products = ({ filter,filtertext }) => {
+  const [MuchContext] = useContext(MainContext)
   const onFilter = (v) =>{
     if (filter==='') {
       return v.type[0].includes(filter)
@@ -10,10 +12,17 @@ const Products = ({ filter }) => {
       return v.type.includes(filter)
     }
   }
+  const onNameFilter = (v) => {
+    if (filtertext === '') {
+      return true
+    }else{
+      return v.name.toLowerCase().includes(filtertext.toLowerCase())
+    }
+  }
   return (
     <ProductsMain>
       {
-        products.map((v) => onFilter(v) &&
+        products.map((v) => onNameFilter(v) && onFilter(v) &&
           <ProductsHeader key={v.id} >
             <img src={v.img.img1} alt="rasm bor" />
             <div className='padding'>
