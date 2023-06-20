@@ -7,7 +7,7 @@ export const MainContext = createContext()
 const Main = ({ children }) => {
     const [MuchContext,setMuchContext] = useState(
         {
-            sidebar: true,
+            sidebar: false,
             filter: ''
         }
     )
