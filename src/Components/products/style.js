@@ -11,10 +11,14 @@ export const ProductsMain = styled.div`
   grid-template-columns: repeat(4,1fr);
   padding-top: 30px;
   background-color: #E2E2E2;
+  ${media.mobile}{
+    width: 520px;
+  grid-template-columns: repeat(2,1fr);
+  }
 `
 
 export const ProductsHeader = styled.div`
- width: 270px;
+ width: 280px;
  margin: 0 auto;
  background: #fff;
  box-shadow: 0 0 5px #fff;
@@ -25,7 +29,10 @@ export const ProductsHeader = styled.div`
     padding-bottom: 10px;
  }
  ${media.mobile}{
-  background-color: red;
+  width: 240px;
+  img{
+    width: 100%;
+  }
  }
 `
 export const Name = styled.div`
@@ -35,6 +42,9 @@ font-weight: 500;
 font-size: 24px;
 line-height: 23px;
 color: var(--main-color);
+${media.mobile}{
+  font-size: 20px;
+}
 `
 export const Info = styled.div`
 width: 241px;
@@ -45,6 +55,9 @@ font-size: 14px;
 line-height: 21px;
 color: rgba(0, 0, 0, 0.5);
 margin-top: 10px;
+${media.mobile}{
+   width: 100%;
+}
 `
 
 export const StartsQoldiq = styled.div`

@@ -49,6 +49,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali'
+        ]
 
     },
     {
@@ -68,6 +71,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali','medtexnika'
+        ]
 
     },
     {
@@ -87,6 +93,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali'
+        ]
 
     },
     {
@@ -106,6 +115,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'smartWatch','telefonlar'
+        ]
 
     },
     {
@@ -125,6 +137,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali','medtexnika'
+        ]
 
     },
     {
@@ -144,6 +159,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali','medtexnika','bolalar'
+        ]
 
     },
     {
@@ -163,6 +181,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'avtomabil','foydali'
+        ]
 
     },
     {
@@ -182,6 +203,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'avtomabil','bolalar','foydali'
+        ]
 
     },
     {
@@ -201,6 +225,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'avtomabil','medtexnika','uyhovli','foydali'
+        ]
 
     },
     {
@@ -220,6 +247,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'uyhovli','foydali','medtexnika'
+        ]
     },
     {
         id: 12,
@@ -238,6 +268,9 @@ export const products = [
         colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali','bolalar','kitoblar','telefonlar',
+        ]
 
     },
 
