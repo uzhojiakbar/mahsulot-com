@@ -24,9 +24,27 @@ body {
     --third-color-opacity: #5288c1d0;
 }
 
+*::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.486);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+*::selection {
+    background-color: #4400fd;
+    color: white;
+}
+
 .center {
     width: 1440px;
     margin: 0 auto;
+
 }
 
 .main {
@@ -35,9 +53,10 @@ body {
 }
 
 @media (max-width: 520px) {
-    .center{
+    .center {
         width: 100%;
     }
+
     .main {
         width: 100%;
         padding-top: 160px;

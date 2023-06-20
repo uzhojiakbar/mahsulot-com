@@ -4,21 +4,23 @@ const media = {
     laptopL: "@media (max-width: 1440px)",
     laptop: "@media (max-width: 1240px)",
     tablet: "@media (max-width: 768px)",
-    mobileL: "@media (max-width: 425px)",
+    mobileL: "@media (max-width: 360px)",
     mobileM: "@media (max-width: 400px)",
     mobile: "@media (max-width: 520px)",
 };
-
 const NavbarWindow = styled.div`
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: #F5F5F5;
+    background-color: white;
     ${media.mobile} {
         width: 100%;
         height: 160px;
+    }
+    ${media.mobileL} {
+        width: 360px;
     }
 `
 
@@ -30,12 +32,11 @@ const NavbarStyle = styled.div`
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 10px;
-    flex-wrap: wrap;
 
     .burger:hover{
         background-color: var(--third-color-opacity);
     }
-    background-color: #F5F5F5;
+    background-color: transparent;
 
     /* MEDIA LAPTOP */
     ${media.tablet} {
@@ -43,16 +44,14 @@ const NavbarStyle = styled.div`
     }
     /* MEDIA MOBILE*/
     ${media.mobile} {
-        /* width: 430px; */
+        flex-wrap: wrap;
         width: 100%;
         height: 160px;
-        background-color: #E2E2E2;
+        background-color: white;
         .burger:hover{
-            background-color: white;
+            background-color: transparent;
         }
     }
-    /* position: fixed; */
-    top: 0;
 `
 const Burger = styled.i`
     width: fit-content;
@@ -64,7 +63,6 @@ const Burger = styled.i`
     cursor: pointer;
     color: white;
     font-size: 20px;
-
     /* MEDIA MOBILE*/
     ${media.mobile} {
         background-color: transparent;
