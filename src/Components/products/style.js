@@ -2,34 +2,33 @@ import { styled } from "styled-components";
 
 const media = {
   mobile: "@media (max-width: 520px)",
+  tablet: "@media (max-width: 768px)",
 }
 export const ProductsMain = styled.div`
   width: 1440px;
   height: 100%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   padding-top: 30px;
   background-color: #E2E2E2;
   ${media.mobile}{
-    width: 520px;
-  grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
   }
 `
 
 export const ProductsHeader = styled.div`
- width: 280px;
  margin: 0 auto;
  background: #fff;
  box-shadow: 0 0 5px #fff;
- margin-top: 30px;
+ margin-bottom: 30px;
  .padding{
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
  }
  ${media.mobile}{
-  width: 240px;
   img{
     width: 100%;
   }
