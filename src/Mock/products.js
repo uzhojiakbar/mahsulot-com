@@ -17,7 +17,7 @@ export const products = [
         name: 'Ochki',
         starts: yulduz,
         qoldiq: 2,
-         info: {
+        info: {
             seller: 'apple',
             info: "Kompyuter va telefon nuridan100% himoyachi ochki",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -25,10 +25,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
-
+        type: [
+            'avtomabil','maishiy.'
+        ]
     },
     {
         id: 2,
@@ -36,7 +38,7 @@ export const products = [
         name: 'Rapm Shampun',
         starts: yulduz,
         qoldiq: 2,
-         info: {
+        info: {
             seller: 'apple',
             info: "Bosh terisidagi qon aylanishiniyaxshilaydi.",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -44,9 +46,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 215_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali'
+        ]
 
     },
     {
@@ -55,7 +60,7 @@ export const products = [
         name: 'Swifty Sharp Tool',
         starts: yulduz,
         qoldiq: 5,
-         info: {
+        info: {
             seller: 'apple',
             info: "Simsiz elektr to'ki yordamidaishlovchi yengil charx.",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -63,9 +68,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 169_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali','medtexnika'
+        ]
 
     },
     {
@@ -74,7 +82,7 @@ export const products = [
         name: 'Quyosh ko’zoynagi',
         starts: yulduz,
         qoldiq: 50,
-         info: {
+        info: {
             seller: 'apple',
             info: "Quyosh nurini toʻ suvchibardoshli linzlarning mukammal",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -82,9 +90,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 169_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali'
+        ]
 
     },
     {
@@ -93,7 +104,7 @@ export const products = [
         name: 'Smart Watch',
         starts: yulduz,
         qoldiq: 2,
-         info: {
+        info: {
             seller: 'apple',
             info: "Simkarta tushadi , Aql charhlaydigan o’yinlari bor",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -101,9 +112,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 347_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'smartWatch','telefonlar'
+        ]
 
     },
     {
@@ -112,7 +126,7 @@ export const products = [
         name: 'Rest Rejact',
         starts: yulduz,
         qoldiq: 2,
-         info: {
+        info: {
             seller: 'apple',
             info: "Sizni hasharotlar vkemiruvchilarni qilyaptimi",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -120,9 +134,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 189_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali','medtexnika'
+        ]
 
     },
     {
@@ -131,7 +148,7 @@ export const products = [
         name: 'Masajyor',
         starts: yulduz,
         qoldiq: 20,
-         info: {
+        info: {
             seller: 'apple',
             info: "Badandagi yogʻlar ortiqchavazndan xalos etadi",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -139,9 +156,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 195_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali','medtexnika','bolalar'
+        ]
 
     },
     {
@@ -150,7 +170,7 @@ export const products = [
         name: 'Ochki',
         starts: yulduz,
         qoldiq: 2,
-         info: {
+        info: {
             seller: 'apple',
             info: "Kompyuter va telefon nuridan 100% himoyachi ochki",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -158,9 +178,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'avtomabil','foydali'
+        ]
 
     },
     {
@@ -169,7 +192,7 @@ export const products = [
         name: 'Quyosh ko’zoynagi',
         starts: yulduz,
         qoldiq: 2,
-         info: {
+        info: {
             seller: 'apple',
             info: "Quyosh nurini toʻ suvchibardoshli linzlarning mukammal",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -177,9 +200,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'avtomabil','bolalar','foydali'
+        ]
 
     },
     {
@@ -188,7 +214,7 @@ export const products = [
         name: 'Kamera299',
         starts: yulduz,
         qoldiq: 2,
-         info: {
+        info: {
             seller: 'apple',
             info: "Kompyuter va telefon nuridan100% himoyachi ochki",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -196,9 +222,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'avtomabil','medtexnika','uyhovli','foydali'
+        ]
 
     },
     {
@@ -207,7 +236,7 @@ export const products = [
         name: 'Arctic Air Ultra',
         starts: yulduz,
         qoldiq: 2,
-         info: {
+        info: {
             seller: 'apple',
             info: "Mini konditsioner: Sovutadi,namlaydi, tozalaydi",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -215,10 +244,12 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
-
+        type: [
+            'uyhovli','foydali','medtexnika'
+        ]
     },
     {
         id: 12,
@@ -226,7 +257,7 @@ export const products = [
         name: 'Smart Watch',
         starts: yulduz,
         qoldiq: 30,
-         info: {
+        info: {
             seller: 'apple',
             info: "Simkarta tushadi ,Aql charhlaydigan o’yinlari bor",
             desc: `Mahsulot haqida     Smart Watch M26 Plus  Simsiz quvvat oladi,     Trenarovka rejimi,   Yurak urushini oʻlchash,
@@ -234,10 +265,13 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{id:1, name:'qizil', colorCode:'#212121'}],
-        deliver: [1,3],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        deliver: [1, 3],
         count: 30,
+        type: [
+            'foydali','bolalar','kitoblar','telefonlar',
+        ]
 
     },
-    
+
 ]

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { products } from '../../Mock/products'
 import { Name, Info, ProductsHeader, ProductsMain, StartsQoldiq, ProductPrice } from './style'
 
