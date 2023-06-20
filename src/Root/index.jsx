@@ -9,7 +9,7 @@ import Products from '../Components/products'
 
 const Root = () => {
     const [active, setActive] = useState('')
-    const [MuchContext,setMuchContext] = useContext(MainContext)
+    const [MuchContext] = useContext(MainContext)
 
     return (
         <div className='main center' >

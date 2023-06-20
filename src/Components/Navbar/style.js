@@ -1,11 +1,8 @@
 import { styled } from "styled-components";
 
 const media = {
-    laptopL: "@media (max-width: 1440px)",
-    laptop: "@media (max-width: 1240px)",
     tablet: "@media (max-width: 768px)",
     mobileL: "@media (max-width: 360px)",
-    mobileM: "@media (max-width: 400px)",
     mobile: "@media (max-width: 520px)",
 };
 const NavbarWindow = styled.div`
@@ -32,11 +29,10 @@ const NavbarStyle = styled.div`
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 10px;
-
+    background-color: transparent;
     .burger:hover{
         background-color: var(--third-color-opacity);
     }
-    background-color: transparent;
 
     /* MEDIA LAPTOP */
     ${media.tablet} {

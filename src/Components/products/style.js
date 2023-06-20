@@ -7,7 +7,6 @@ const media = {
 export const ProductsMain = styled.div`
   width: 1440px;
   height: 100%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   padding-top: 30px;
@@ -17,7 +16,6 @@ export const ProductsMain = styled.div`
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
   }
-  
 `
 
 export const ProductsHeader = styled.div`
