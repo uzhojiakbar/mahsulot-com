@@ -3,7 +3,7 @@ import { products } from '../../Mock/products'
 import { Name, Info, ProductsHeader, ProductsMain, StartsQoldiq, ProductPrice } from './style'
 
 const Products = ({ filter, filtertext }) => {
-  const [productsSt, setProductsSt] = useState(products)
+  const [productsSt] = useState(products)
   const onFilter = (v) => {
     if (filter === '') {
       return v.type[0].includes(filter)

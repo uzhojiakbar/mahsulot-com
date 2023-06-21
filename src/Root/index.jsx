@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
-import './style.css'
-import Navbar from '../Components/Navbar'
-import { Route, Routes } from 'react-router-dom'
-import Sidebar from '../Components/Sidebar'
+
 import { useContext } from 'react'
 import { MainContext } from '../Context/main'
+import { Route, Routes } from 'react-router-dom'
+
+import Navbar from '../Components/Navbar'
+import Sidebar from '../Components/Sidebar'
 import Products from '../Components/products'
+import Profile from '../Components/Profile'
+
+import './style.css'
 
 const Root = () => {
     const [active, setActive] = useState('')
-    const [filtertext,setFilterText] = useState('')
+    const [filtertext, setFilterText] = useState('')
     const [MuchContext] = useContext(MainContext)
 
     return (
@@ -22,12 +26,12 @@ const Root = () => {
                 /> : null
             }
             <Routes>
-                <Route path='/profile' element={<h1>Profile</h1>} />
+                <Route path='/profile' element={<Profile />} />
                 <Route path='/buy' element={<h1>Shop</h1>} />
                 <Route path='/' element={<Products
                     filtertext={filtertext}
                     setFilterText={setFilterText}
-                    filter={active} />}/>
+                    filter={active} />} />
             </Routes>
         </div>
     )

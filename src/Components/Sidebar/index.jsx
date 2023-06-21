@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { SidebarBack, SidebarButtons, SidebarCon, SidebarMain } from './style'
 import { SidebarMock } from '../../Mock/sidebar'
 import { MainContext } from '../../Context/main'
