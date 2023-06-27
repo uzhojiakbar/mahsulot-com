@@ -42,9 +42,8 @@ body {
 }
 
 .center {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
-
 }
 
 .main {
@@ -56,7 +55,6 @@ body {
     .center {
         width: 100%;
     }
-
     .main {
         width: 100%;
         padding-top: 160px;

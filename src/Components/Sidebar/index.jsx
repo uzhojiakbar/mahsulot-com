@@ -10,7 +10,6 @@ import { NavLink } from 'react-router-dom'
 
 const Sidebar = ({ active, setActive }) => {
     const [MuchContext, setMuchContext] = useContext(MainContext)
-
     const onFilterClick = (key) => {
         setActive(key);
         setMuchContext({ ...MuchContext, sidebar: !MuchContext.sidebar })

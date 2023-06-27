@@ -10,6 +10,7 @@ import Products from '../Components/products'
 import Profile from '../Components/Profile'
 
 import './style.css'
+import NavBottomBar from '../Components/NavBottomBar'
 
 const Root = () => {
     const [active, setActive] = useState('')
@@ -25,13 +26,18 @@ const Root = () => {
                     setActive={setActive}
                 /> : null
             }
+            <NavBottomBar
+                active={active}
+                setActive={setActive}
+            />
             <Routes>
                 <Route path='/profile' element={<Profile />} />
                 <Route path='/buy' element={<h1>Shop</h1>} />
                 <Route path='/' element={<Products
                     filtertext={filtertext}
                     setFilterText={setFilterText}
-                    filter={active} />} />
+                    filter={active}
+                />} />
             </Routes>
         </div>
     )

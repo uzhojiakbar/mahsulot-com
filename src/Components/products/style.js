@@ -6,6 +6,7 @@ const media = {
 }
 export const ProductsMain = styled.div`
   width: 1440px;
+  margin: 0 auto;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
