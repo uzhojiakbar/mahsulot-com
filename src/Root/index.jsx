@@ -6,6 +6,7 @@ import Sidebar from '../Components/Sidebar'
 import { useContext } from 'react'
 import { MainContext } from '../Context/main'
 import Products from '../Components/products'
+import Product from '../Components/Product/product'
 
 const Root = () => {
     const [active, setActive] = useState('')
@@ -24,6 +25,7 @@ const Root = () => {
                 <Route path='/profile' element={<h1>Profile</h1>} />
                 <Route path='/buy' element={<h1>Shop</h1>} />
                 <Route path='/' element={<Products filter={active} />}/>
+                <Route path='product' element={<Product/>} />
             </Routes>
         </div>
     )

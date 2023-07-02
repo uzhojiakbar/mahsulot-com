@@ -13,7 +13,10 @@ import yulduz from '../Assets/img/yulduz.svg'
 export const products = [
     {
         id: 1,
-        img: { img1: ochki, img2: ochki, img3: ochki, img4: ochki, },
+        img: [{ id: 1, img: ochki, },
+        { id: 2, img: masajyor, },
+        { id: 3, img: ultra, },
+        { id: 4, img: smartvatch, },],
         name: 'Ochki',
         starts: yulduz,
         qoldiq: 2,
@@ -25,16 +28,20 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
-            'avtomabil','maishiy.'
-        ]
+            'avtomabil', 'maishiy.'
+        ],
+        yetqazibBerish: '1 kundan 3 kungacha bepul',
+
     },
     {
         id: 2,
-        img: { img1: shampun, img2: shampun, img3: shampun, img4: shampun, },
+        img: [{ id: 1, img: shampun, }, { id: 2, img: shampun }, { id: 3, img: shampun }, { id: 4, img: shampun }],
         name: 'Rapm Shampun',
         starts: yulduz,
         qoldiq: 2,
@@ -46,7 +53,9 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 215_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
@@ -56,7 +65,7 @@ export const products = [
     },
     {
         id: 3,
-        img: { img1: tool, img2: tool, img3: tool, img4: tool, },
+        img: [{ id: 1, img: tool }, { id: 2, img: tool }, { id: 3, img: tool }, { id: 4, img: tool }],
         name: 'Swifty Sharp Tool',
         starts: yulduz,
         qoldiq: 5,
@@ -72,13 +81,13 @@ export const products = [
         deliver: [1, 3],
         count: 30,
         type: [
-            'foydali','medtexnika'
+            'foydali', 'medtexnika'
         ]
 
     },
     {
         id: 4,
-        img: { img1: quyoshkozaynak, img2: quyoshkozaynak, img3: quyoshkozaynak, img4: quyoshkozaynak, },
+        img: [{ id: 1, img: quyoshkozaynak }, { id: 2, img: quyoshkozaynak }, { id: 3, img: quyoshkozaynak }, { id: 4, img: quyoshkozaynak }],
         name: 'Quyosh ko’zoynagi',
         starts: yulduz,
         qoldiq: 50,
@@ -90,7 +99,9 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 169_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
@@ -100,7 +111,7 @@ export const products = [
     },
     {
         id: 5,
-        img: { img1: smartvatch, img2: smartvatch, img3: smartvatch, img4: smartvatch, },
+        img: [{ id: 1, img: smartvatch }, { id: 2, img: smartvatch }, { id: 3, img: smartvatch }, { id: 4, img: smartvatch }],
         name: 'Smart Watch',
         starts: yulduz,
         qoldiq: 2,
@@ -112,17 +123,21 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 347_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
-            'smartWatch','telefonlar'
-        ]
+            'smartWatch', 'telefonlar'
+        ],
+        yetqazibBerish: '1 kundan 3 kungacha bepul',
+
 
     },
     {
         id: 6,
-        img: { img1: rejact, img2: rejact, img3: rejact, img4: rejact, },
+        img: [{ id: 1, img: rejact }, { id: 2, img: rejact }, { id: 3, img: rejact }, { id: 4, img: rejact }],
         name: 'Rest Rejact',
         starts: yulduz,
         qoldiq: 2,
@@ -134,17 +149,19 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 189_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
-            'foydali','medtexnika'
+            'foydali', 'medtexnika'
         ]
 
     },
     {
         id: 7,
-        img: { img1: masajyor, img2: masajyor, img3: masajyor, img4: masajyor, },
+        img: [{ id: 1, img: masajyor }, { id: 2, img: masajyor }, { id: 3, img: masajyor }, { id: 4, img: masajyor }],
         name: 'Masajyor',
         starts: yulduz,
         qoldiq: 20,
@@ -156,17 +173,19 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 195_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
-            'foydali','medtexnika','bolalar'
+            'foydali', 'medtexnika', 'bolalar'
         ]
 
     },
     {
         id: 8,
-        img: { img1: ochki, img2: ochki, img3: ochki, img4: ochki, },
+        img: [{ id: 1, img: ochki }, { id: 2, img: masajyor }, { id: 3, img: masajyor }, { id: 4, img: masajyor }],
         name: 'Ochki',
         starts: yulduz,
         qoldiq: 2,
@@ -178,17 +197,19 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
-            'avtomabil','foydali'
+            'avtomabil', 'foydali'
         ]
 
     },
     {
         id: 9,
-        img: { img1: quyoshkozaynak, img2: quyoshkozaynak, img3: quyoshkozaynak, img4: quyoshkozaynak, },
+        img: [{ id: 1, img: quyoshkozaynak }, { id: 2, img: quyoshkozaynak }, { id: 3, img: quyoshkozaynak }, { id: 4, img: quyoshkozaynak }],
         name: 'Quyosh ko’zoynagi',
         starts: yulduz,
         qoldiq: 2,
@@ -200,17 +221,19 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
-            'avtomabil','bolalar','foydali'
+            'avtomabil', 'bolalar', 'foydali'
         ]
 
     },
     {
         id: 10,
-        img: { img1: kamera, img2: kamera, img3: kamera, img4: kamera, },
+        img: [{ id: 1, img: kamera }, { id: 2, img: kamera }, { id: 3, img: kamera }, { id: 4, img: kamera }],
         name: 'Kamera299',
         starts: yulduz,
         qoldiq: 2,
@@ -222,17 +245,19 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
-            'avtomabil','medtexnika','uyhovli','foydali'
+            'avtomabil', 'medtexnika', 'uyhovli', 'foydali'
         ]
 
     },
     {
         id: 11,
-        img: { img1: ultra, img2: ultra, img3: ultra, img4: ultra, },
+        img: [{ id: 1, img: ultra }, { id: 2, img: ultra }, { id: 3, img: ultra }, { id: 4, img: ultra }],
         name: 'Arctic Air Ultra',
         starts: yulduz,
         qoldiq: 2,
@@ -244,16 +269,18 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
-            'uyhovli','foydali','medtexnika'
+            'uyhovli', 'foydali', 'medtexnika'
         ]
     },
     {
         id: 12,
-        img: { img1: smartvatch, img2: smartvatch, img3: smartvatch, img4: smartvatch, },
+        img: [{ id: 1, img: smartvatch }, { id: 2, img: smartvatch }, { id: 3, img: smartvatch }, { id: 4, img: smartvatch }],
         name: 'Smart Watch',
         starts: yulduz,
         qoldiq: 30,
@@ -265,13 +292,14 @@ export const products = [
                     Qoʻngʻiroq bildirishnomalari,  Ilovalardan kelgan habarlar,    Soatni oʻzidan qoʻngʻiroq qilish imkoniyati,
                     Remishok almashadi,     Yana koʻplab funksiyalar  Narxi 387.000 So'm  Oʻzbekiston boʻylab yetkazib berish bepul` },
         price: 179_000,
-        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' }],
+        colors: [{ id: 1, name: 'qizil', colorCode: '#212121' },
+        { id: 2, name: 'qora', colorCode: '#212121' },
+        { id: 3, name: 'yashil', colorCode: '#212121' }],
         deliver: [1, 3],
         count: 30,
         type: [
-            'foydali','bolalar','kitoblar','telefonlar',
+            'foydali', 'bolalar', 'kitoblar', 'telefonlar',
         ]
 
     },
-
 ]
