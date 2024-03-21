@@ -7,11 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Sidebar'
 import Products from '../Components/products'
-import Profile from '../Components/Profile'
-
-import './style.css'
 import NavBottomBar from '../Components/NavBottomBar'
-import Shop from '../Components/Shop'
 
 const Root = () => {
     const [active, setActive] = useState('')
@@ -32,13 +28,9 @@ const Root = () => {
                 setActive={setActive}
             />
             <Routes>
-                <Route path='/profile' element={<Profile />} />
-                <Route path='/buy' element={<Shop/>} />
-                <Route path='/' element={<Products
-                    filtertext={filtertext}
-                    setFilterText={setFilterText}
-                    filter={active}
-                />} />
+                <Route path='/profile' element={<h1>Profile</h1>} />
+                <Route path='/buy' element={<h1>Shop</h1>} />
+                <Route path='/' element={<Products filter={active} filtertext={filtertext} />}/>
             </Routes>
         </div>
     )
